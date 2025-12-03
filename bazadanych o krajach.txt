@@ -1,0 +1,56 @@
+bazadanych o swiecie
+
+Tabela 1. - Kraje.
+
+ludnosc
+waluta obowiązkowa
+% bezrobocia
+wielkosc
+dłg. granicy
+prezydent
+PKB
+nazwa
+
+Tabela 2. - Kontynenty
+
+nazwa
+ludność
+najwiekszy Kraj
+wielkosc
+
+Tabela 3. - Miasta
+
+ilosc mieszkancow
+długość
+rok uzyskania praw Miasta
+nazwa
+kraj w którym leży
+
+Tabela 4. - Rzeki
+
+nazwa
+gdzie lezy (kraj)
+długość
+głębokość
+zanieczyszczenie wody
+
+Tabela 5. - Morza
+
+nazwa
+gdzie lezy (kraj)
+jakie zwierzeta tam zyja
+popularność
+zanieczyszczenie
+
+Tabela 6. - Góry
+
+nazwa
+gdzie lezy
+najwiekszy punkty w metrach
+ile osób osiągneło szczyt
+pierwsza osoba który osiągneła szczyt
+
+CREATE DATABASE swiat;
+CREATE TABLE Kraje ( id int AUTO_INCREMENT PRIMARY KEY, nazwa varchar(50), ludnosc int(12), waluta varchar(20), proc_bezrobocia float, wielkosc_w_km² float(9), dlg_granicy_w_km int(5), prezydent varchar(80), PKB int(20) );
+CREATE TABLE Kontynenty( id int AUTO_INCREMENT PRIMARY KEY, nazwa varchar(25), ludnosc int(12), najwiekszy_kraj varchar(50), wielkosc_w_km² float(12) );
+CREATE TABLE miasta ( id int AUTO_INCREMENT PRIMARY KEY, nazwa varchar(50), ilość_miesz int(15), dlugosc_w_km float(10), kraj_w_ktorym_lezy varchar(20), rok_uzyskania_praw_miasta year(4) );
